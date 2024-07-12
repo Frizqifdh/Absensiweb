@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Absensi</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Absensi</h1>
+        <form id="absensiForm">
+            <label for="name">Nama:</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="idCard">Foto ID Card:</label>
+            <button type="button" id="openCamera">Ambil Foto</button>
+            <video id="video" width="320" height="240" autoplay style="display: none;"></video>
+            <canvas id="canvas" style="display: none;"></canvas>
+            
+            <button type="submit">Absen</button>
+        </form>
+
+        <h2>Database Absensi</h2>
+        <table id="absensiTable">
+            <thead>
+                <tr>
+                    <th>Nama</th>
+                    <th>Tanggal Absen</th>
+                    <th>Foto ID Card</th>
+                </tr>
+            </thead>
+            <tbody>
+            </tbody>
+        </table>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
